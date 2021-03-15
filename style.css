@@ -1,0 +1,25 @@
+@keyframes bounce {
+  0%,100%   {
+    transform: translate(-50%,0px);
+    animation-timing-function: ease-out;
+  }
+  50%  {
+    transform: translate(-50%,-200px);
+    animation-timing-function: ease-in;
+  }
+}
+
+#ball {
+   position: fixed;
+   left: 50%;
+   bottom: 0;
+   width: 100px;
+   height: 100px;
+   transform: translateX(-50%);
+   background-color: red;
+   border-radius: 50%;
+   animation-name: bounce;
+   animation-duration: 3s;
+   animation-iteration-count: infinite; 
+}
+
